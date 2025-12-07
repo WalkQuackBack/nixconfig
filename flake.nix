@@ -35,6 +35,7 @@
               extraSpecialArgs = {
                 inherit stateVersion;
               };
+              backupFileExtension = "old";
               sharedModules = [ plasma-manager.homeModules.plasma-manager ];
               useGlobalPkgs = true;
               useUserPackages = true;
