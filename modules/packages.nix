@@ -3,6 +3,7 @@
         google-chrome
         bitwarden-desktop
         vscode
+        anki
     ];
     fonts.packages = with pkgs; [
         noto-fonts
