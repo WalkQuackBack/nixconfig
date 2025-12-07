@@ -3,6 +3,7 @@
 {
   imports = [
     ./plasma.nix
+    ./nixcord.nix
   ];
 
   programs.git = {

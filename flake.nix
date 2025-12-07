@@ -15,9 +15,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
+
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, nixcord, ... }:
     let
       system = "x86_64-linux";
       stateVersion = "25.11";
@@ -36,7 +40,10 @@
                 inherit stateVersion;
               };
               backupFileExtension = "old";
-              sharedModules = [ plasma-manager.homeModules.plasma-manager ];
+              sharedModules = [
+                plasma-manager.homeModules.plasma-manager
+                nixcord.homeModules.nixcord
+              ];
               useGlobalPkgs = true;
               useUserPackages = true;
               users.user = ./modules/home-manager/home.nix;
