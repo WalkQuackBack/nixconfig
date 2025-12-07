@@ -21,27 +21,27 @@
 
     fonts = {
         general = {
-            family = "Inter";
+            family = "Inter Variable";
             pointSize = 14;
             weight = 400;
         };
         small = {
-            family = "Inter";
+            family = "Inter Variable";
             pointSize = 10;
             weight = 400;
         };
         toolbar = {
-            family = "Inter";
+            family = "Inter Variable";
             pointSize = 12;
             weight = 500;
         };
         menu = {
-            family = "Inter";
+            family = "Inter Variable";
             pointSize = 12;
             weight = 400;
         };
         windowTitle = {
-            family = "Inter";
+            family = "Inter Variable";
             pointSize = 14;
             weight = 400;
             letterSpacing = 95;
