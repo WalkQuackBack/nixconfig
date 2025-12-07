@@ -27,17 +27,18 @@
         };
         small = {
             family = "Inter Variable";
-            pointSize = 10;
-            weight = 400;
-        };
-        toolbar = {
-            family = "Inter Variable";
             pointSize = 12;
             weight = 500;
         };
+        toolbar = {
+            family = "Inter Variable";
+            pointSize = 14;
+            weight = 400;
+            letterSpacing = 95;
+        };
         menu = {
             family = "Inter Variable";
-            pointSize = 12;
+            pointSize = 14;
             weight = 400;
         };
         windowTitle = {
