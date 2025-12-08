@@ -1,4 +1,4 @@
-{ inputs, stateVersion, ... }: {
+{ inputs, stateVersion, pkgs, ... }: {
     imports = [
         ./boot.nix
         ./packages.nix
@@ -23,6 +23,15 @@
         LC_PAPER = "en_CA.UTF-8";
         LC_TELEPHONE = "en_CA.UTF-8";
         LC_TIME = "en_CA.UTF-8";
+    };
+
+    i18n.inputMethod = {
+        enable = true;
+        type = "fcitx5";
+        fcitx5.addons = with pkgs; [
+            fcitx5-mozc
+            fcitx5-gtk
+        ];
     };
 
     # Services
