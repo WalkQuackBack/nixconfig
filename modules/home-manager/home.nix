@@ -4,6 +4,7 @@
   imports = [
     ./plasma.nix
     ./nixcord.nix
+    ./kde-material-you-colors.nix
   ];
 
   programs.git = {

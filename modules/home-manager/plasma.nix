@@ -6,7 +6,7 @@
     overrideConfig = true;
 
     workspace = {
-        colorScheme = "BreezeDark";
+        colorScheme = "Material You dark";
         cursor = {
           cursorFeedback = "None";
           size = 16;
