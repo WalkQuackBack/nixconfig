@@ -81,10 +81,20 @@
         floating = false;
         opacity = "translucent";
         widgets = [
-          "org.kde.plasma.kickoff"
+          {
+            name = "org.kde.plasma.kickoff";
+            config = {
+              compactMode = true;
+              icon = "nix-snowflake";
+              primaryActions = 3;
+              showActionButtonCaptions = false;
+              systemFavorites = "lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown";
+            };
+          }
           "org.kde.plasma.panelspacer"
           "org.kde.plasma.icontasks"
           "org.kde.plasma.panelspacer"
+          "org.kde.plasma.notifications"
         ];
       }
       {
@@ -97,7 +107,26 @@
         floating = true;
         widgets = [
           "org.kde.plasma.systemtray"
-          "org.kde.plasma.digitalclock"
+          {
+            name = "org.kde.plasma.panelspacer";
+            config = {
+              expanding = false;
+              length = 6;
+            };
+          }
+          # TODO: Maybe use higher level interface?
+          {
+            name = "org.kde.plasma.digitalclock";
+            config = {
+              autoFontAndSize = false;
+              fontFamily = "Inter Variable";
+              fontSize = 11;
+              fontStyleName = "Medium";
+              fontWeight = 500;
+              showSeconds = "Never";
+              use24hFormat = 2;
+            };
+          }
         ];
       }
     ];
