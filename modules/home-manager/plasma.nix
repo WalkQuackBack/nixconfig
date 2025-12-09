@@ -46,15 +46,17 @@
             family = "Inter Variable";
             pointSize = 14;
             weight = 400;
+            letterSpacing = 100;
         };
         small = {
             family = "Inter Variable";
             pointSize = 12;
             weight = 500;
+            letterSpacing = 100;
         };
         toolbar = {
             family = "Inter Variable";
-            pointSize = 14;
+            pointSize = 13;
             weight = 400;
             letterSpacing = 95;
         };
@@ -65,7 +67,7 @@
         };
         windowTitle = {
             family = "Inter Variable";
-            pointSize = 14;
+            pointSize = 12;
             weight = 400;
             letterSpacing = 95;
         };
