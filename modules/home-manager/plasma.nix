@@ -19,6 +19,28 @@
 
     # TODO: Natural scrolling for touchpad
 
+    kwin = {
+      effects = {
+        blur = {
+          enable = true;
+          noiseStrength = 8;
+          strength = 10;
+        };
+      };
+      nightLight = {
+        mode = "times";
+        temperature = {
+          day = 6500;
+          night = 3200;
+        };
+        time = {
+          morning = "04:00";
+          evening = "18:00";
+        };
+        transitionTime = 180;
+      };
+    };
+
     fonts = {
         general = {
             family = "Inter Variable";
