@@ -130,5 +130,20 @@
         ];
       }
     ];
+
+    configFile = {
+      breezerc = {
+        Common = {
+          OutlineIntensity = "OutlineLow";
+          ShadowSize = "ShadowMedium";
+        };
+
+        Windeco = {
+          ButtonSize = "ButtonSmall";
+          DrawBackgroundGradient = "true";
+          TitleAlignment = "AlignLeft";
+        };
+      };
+    };
   };
 }
