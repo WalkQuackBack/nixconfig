@@ -4,11 +4,8 @@
     home.packages = with pkgs; [
         python313Packages.kde-material-you-colors
     ];
-    # TODO: Not sure why this doesn't work, have to run manually. :(
     # home.activation = {
-    #     startKdeMaterialYouColors = lib.mkAfter ''
-    #         kde-material-you-colors
-    #     '';
+    #     startKdeMaterialYouColors = lib.mkAfter (lib.getExe pkgs.python313Packages.kde-material-you-colors);
     # };
     home.file."${config.xdg.configHome}/kde-material-you-colors/config.conf".text = ''
 [CUSTOM]
