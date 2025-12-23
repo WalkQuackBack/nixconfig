@@ -1,12 +1,18 @@
 { pkgs, lib, config, ... }:
-
+let 
+    startKMYCScript = pkgs.writeShellScriptBin "start-kde-material-you-colors" ''
+        ${lib.getExe pkgs.python313Packages.kde-material-you-colors} &
+    '';
+in
 {
     home.packages = with pkgs; [
         python313Packages.kde-material-you-colors
     ];
-    # home.activation = {
-    #     startKdeMaterialYouColors = lib.mkAfter (lib.getExe pkgs.python313Packages.kde-material-you-colors);
-    # };
+    home.activation = {
+        startKdeMaterialYouColors = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+            $DRY_RUN_CMD ${lib.getExe startKMYCScript}
+        '';
+    };
     home.file."${config.xdg.configHome}/kde-material-you-colors/config.conf".text = ''
 [CUSTOM]
 # INSTRUCTIONS
