@@ -1,0 +1,32 @@
+ytmusic-app-layout {
+    --ytmusic-nav-bar-height: 52px !important;
+    --ytmusic-nav-bar: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.85), hsla(0, 0%, 0%, 0.9));
+}
+
+/* Round video player */
+ytmusic-player:not([player-ui-state="FULLSCREEN"]) {
+    &,
+    .song-media-controls.ytmusic-player,
+    .html5-video-player:not(.ytp-transparent),
+    .html5-video-player.unstarted-mode,
+    .html5-video-player.ad-showing,
+    .html5-video-player.ended-mode,
+    .html5-main-video {
+        border-radius: 12px;
+    }
+}
+/* Style tabs like M3 ish */
+ytmusic-player-page tp-yt-paper-tabs .tp-yt-paper-tabs[style-target=content] {
+    text-transform: none;
+    font-weight: 400;
+}
+
+/* Solid "ripples" */
+.wave-container .tp-yt-paper-ripple {
+    scale: 5;
+}
+
+/* Header blur */
+#nav-bar-background, #header.ytmusic-item-section-renderer {
+    backdrop-filter: blur(30px);
+}

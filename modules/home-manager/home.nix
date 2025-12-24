@@ -5,6 +5,7 @@
     ./plasma.nix
     ./nixcord.nix
     ./kde-material-you-colors.nix
+    ./pear-desktop/default.nix
   ];
 
   programs.git = {
