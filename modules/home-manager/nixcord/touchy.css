@@ -1,0 +1,312 @@
+/*
+    Subjective theme optimized for laptop touchscreens,
+    use with Discord Spacious/Default
+*/
+
+:root {
+    --spatial-standard-fast-timing: cubic-bezier(0.27, 1.06, 0.18, 1.00);
+    --spatial-standard-fast-duration: .35s;
+
+    --effects-standard-fast-timing: cubic-bezier(0.31, 0.94, 0.34, 1.00);
+    --effects-standard-fast-duration: .15s;
+
+    --spatial-expressive-fast-timing: cubic-bezier(0.42, 1.67, 0.21, 0.90);
+    --spatial-expressive-fast-duration: .35s;
+
+    --spatial-expressive-default-timing: cubic-bezier(0.38, 1.21, 0.22, 1.00);
+    --spatial-expressive-default-duration: .5s;
+
+    --effects-expressive-default-timing: cubic-bezier(0.34, 0.80, 0.34, 1.00);
+    --effects-expressive-default-duration: .2s;
+
+    --panel-gap: 6px;
+    --min-target-size: 44px;
+}
+
+/* Increase touch targets */
+:root {
+    .aa8da23faa27393c-side .aa8da23faa27393c-item {
+        line-height: 30px;
+        margin-block: 0;
+        border-radius: 8px;
+    }
+
+    /* Remove gaps between DM list items */
+    .a244c3c87d2b1e13-container {
+        padding: 0;
+    }
+    /* Remove gaps between server list items */
+    ._2ea32c412048f708-wrapper {
+        padding: 0;
+    }
+
+    /* Increase touch target for DM list items */
+    ._20a53846fe2e8513-layout {
+        height: 52px;
+    }
+    /* Increase touch target for server list items */
+    ._2ea32c412048f708-link {
+        padding: 5px 10px;
+    }
+
+    /* Increase touch target for toolbar actions */
+    ._9293f6b2fc12398a-iconWrapper,
+    /* Increase touch target for activities button */
+    .e6e74fd4d1221f53-button,
+    /* Increase touch target for chatbox toolbar actions */
+    ._740174f3d6a2c8fe-button {
+        width: var(--min-target-size);
+        height: var(--min-target-size);
+    }
+    /* Increase icon size for chatbox toolbar actions */
+    ._740174f3d6a2c8fe-button [class^='buttonWrapper'],
+    [class^='emojiButton'] > div {
+        /* 22px icons */
+        scale: 1.1;
+    }
+    /* Increase touch target for attach button */
+    ._740174f3d6a2c8fe-attachButton {
+        margin-right: var(--space-4);
+    }
+    ._0923f156a0410684-attachWrapper {
+        padding-inline: var(--space-4) var(--space-6);
+        padding-block: 2px;
+    }
+    ._0923f156a0410684-attachButtonInner {
+        box-sizing: border-box;
+        height: var(--min-target-size);
+        padding: 12px;
+        transition: none;
+    }
+    /* Increase touch target for send button */
+    /* Make send button primary whe activatable */
+    .aa63abf63dbd9cce-button {
+        min-height: var(--min-target-size);
+        min-width: var(--min-target-size);
+        padding: 4px;
+
+        &[aria-disabled="false"] {
+            background-color: var(--control-background-primary-default);
+            border-color: var(--control-border-primary-default);
+
+            svg {
+                scale: 1.1;
+            }
+        }
+
+        &:not(._24af7f4d0326ba4f-noHover):hover {
+            background-color: var(--control-background-primary-hover);
+            border-color: var(--control-border-primary-hover);
+            .aa63abf63dbd9cce-activeButtonChild {
+                color: var(--control-text-primary-hover);
+            }
+        }
+
+        .aa63abf63dbd9cce-activeButtonChild {
+            color: var(--control-text-primary-default);
+        }
+    }
+
+    /* Context Menu reduce padding */
+    .c1e9c47c23f12ca3-scroller {
+        padding: 4px;
+        padding-right: 4px !important;
+        overflow-y: auto !important;
+        border-radius: 0;
+    }
+    /* Context menu touch target */
+    .c1e9c47c23f12ca3-labelContainer {
+        padding: 7px 8px;
+    }
+    /* Context menu item */
+    .c1e9c47c23f12ca3-item {
+        font-weight: 400;
+    }
+    /* Context menu divider decrease margin */
+    .c1e9c47c23f12ca3-separator {
+        margin: 4px 6px;
+    }
+}
+
+/* Button */
+button,
+[class^='button'],
+[class^='buttonChild'],
+[class^='emojiButton'],
+.aa63abf63dbd9cce-buttonChild,
+._24af7f4d0326ba4f-button:not(._24af7f4d0326ba4f-noHover) {
+    transition: opacity 50ms ease-in !important;
+}
+
+/* Expand search bar on hover */
+.c322aadb96ff59c9-searchBar {
+    background: var(--background-gradient-lowest, var(--background-base-lowest));
+    border-color: var(--border-normal);
+    transition: width var(--spatial-expressive-default-duration) var(--spatial-expressive-default-timing);
+    &:where(:has(> [tabindex="-1"])) {
+        width: 32px;
+        margin-inline: -4px;
+        background-color: transparent;
+        border-color: transparent;
+        .DraftEditor-root {
+            opacity: 0;
+            transition: opacity var(--effects-expressive-default-duration) var(--effects-expressive-default-timing);
+        }
+    }
+    
+    [class^='icon_'] {
+        margin-right: var(--space-8);
+    }
+    &:focus-within {
+        background: var(--background-gradient-lowest, var(--background-base-lowest));
+        border-color: var(--border-normal);
+        width: 244px;
+        .DraftEditor-root {
+            opacity: 1;
+        }
+    }
+}
+
+/* Sidebar view */
+.aa8da23faa27393c-side .aa8da23faa27393c-item {
+    border-radius: 18px;
+    margin-bottom: 2px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+/* Gaps */
+
+/* Main sidebar */
+._5e434347c823b592-sidebarListRounded {
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-md);
+    margin-inline-end: var(--panel-gap);
+    border-right: 1px solid var(--app-border-frame);
+    & > nav,
+    & > nav > div:first-child,
+    /* Private channels scroller */
+    ._99e7cad8d4c55236-scroller {
+        background: var(--background-gradient-high,var(--background-base-lower));
+    }
+}
+
+/* Centre panel */
+/* DM/Server chaT */
+.f75fb00fb7356cbe-chat,
+/* Friends outer container */
+._133bf5eea8e33a34-container,
+/* Friends inner container */
+._9293f6b2fc12398a-container,
+/* Nitro page */
+._0920e02cc8fc7b7b-homeWrapper,
+/* Nitro page outer wrapper */
+.f07d62e29a48ceee-applicationStore {
+    border-top-left-radius: var(--radius-md);
+}
+
+/* Mobile style self panel */
+._5e434347c823b592-panels {
+    background: var(--background-gradient-low,var(--background-base-low));
+    border-top: 1px solid var(--border-faint);
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - var(--panel-gap));
+}
+._37e49614b9f110a9-container {
+    padding: var(--space-6);
+}
+
+/* Top toolbar */
+._9293f6b2fc12398a-toolbar,
+/* Message bar toolbar */
+._740174f3d6a2c8fe-buttons {
+    gap: 0;
+}
+
+._5e434347c823b592-sidebarResizeHandle {
+    --custom-overdrag: 2;
+}
+
+.b8880176888cc928-inTextChannel .b8880176888cc928-text {
+    margin-left: var(--space-8);
+}
+
+/* Message hover effect */
+._5126c0cd07f243a0-message._5126c0cd07f243a0-selected,
+._5126c0cd07f243a0-message:hover {
+    background: var(--background-message-hover);
+}
+
+/* Round chat box more */
+._740174f3d6a2c8fe-channelTextArea,
+._740174f3d6a2c8fe-scrollableContainer {
+    border-radius: calc(var(--custom-channel-textarea-text-area-height)/2);
+}
+/* Chatbox shadow */
+._740174f3d6a2c8fe-channelTextArea {
+    box-shadow: var(--shadow-low);
+    &:hover {
+        box-shadow: var(--shadow-low-hover);
+    }
+}
+/* Symetrical scroll area chatbox */
+._740174f3d6a2c8fe-scrollableContainer {
+    scrollbar-gutter: stable both-edges;
+    /* Make chatbox buttons rounded */
+    [class^='button'],
+    [class^='emojiButton'] {
+        border-radius: 22px;
+    }
+    /* Fix double state layer */
+    ._0923f156a0410684-attachButton:hover {
+        background-color: transparent;
+    }
+}
+._740174f3d6a2c8fe-sansAttachButton {
+    padding-left: 3px;
+}
+
+/* Top bar compression (see also --custom-app-top-bar-height) */
+.c38106a3f0c3ca76-bar {
+    padding: 0 var(--space-4);
+}
+.c38106a3f0c3ca76-title {
+    visibility: hidden;
+}
+.c38106a3f0c3ca76-leading,
+.c38106a3f0c3ca76-trailing {
+    gap: 0;
+    transform-origin: right;
+    [class^='clickable_'],
+    ._9293f6b2fc12398a-iconWrapper {
+        --custom-horizontal-padding: 0;
+        width: var(--custom-app-top-bar-height);
+        height: var(--custom-app-top-bar-height);
+    }
+    svg {
+        scale: 0.9;
+    }
+}
+
+.theme-light, .theme-dark, .theme-midnight {
+    /* Inter font nicities */
+    --font-primary: InterVariable, Inter, sans-serif;
+    --font-display: InterVariable, Inter, sans-serif;
+
+    font-feature-settings: "cv08", "cv05";
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    /* Spacing */
+    --custom-message-margin-horizontal: 14px;
+
+    --custom-guild-list-padding: var(--space-10);
+    --custom-guild-list-width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
+
+    --chat-input-icon-size: 22px;
+    --custom-channel-textarea-text-area-height: 48px;
+    
+    --custom-app-top-bar-height: var(--space-xs);
+}
