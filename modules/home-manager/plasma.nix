@@ -79,7 +79,7 @@
         location = "left";
         height = 48;
         floating = false;
-        opacity = "translucent";
+        opacity = "adaptive";
         widgets = [
           {
             name = "org.kde.plasma.kickoff";
