@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
     environment.systemPackages = with pkgs; [
         google-chrome
+        microsoft-edge
         bitwarden-desktop
         vscode
     ];
