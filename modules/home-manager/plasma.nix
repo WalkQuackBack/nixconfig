@@ -1,5 +1,7 @@
 { pkgs, ... }:
-
+let 
+  wallpaper = ../../../assets/oceanfoam.png;
+in
 {
   programs.plasma = {
     enable = true;
@@ -13,7 +15,7 @@
           theme = "breeze_cursors";
         };
 
-        wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/DarkestHour/contents/images/2560x1600.png";
+        wallpaper = "${wallpaper}";
         splashScreen.theme = "None";
     };
 
