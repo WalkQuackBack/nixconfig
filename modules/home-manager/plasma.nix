@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let 
-  wallpaper = ../../../assets/oceanfoam.png;
+  wallpaper = ../../assets/oceanfoam.png;
 in
 {
   programs.plasma = {
