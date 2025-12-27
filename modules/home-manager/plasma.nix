@@ -141,9 +141,14 @@ in
         };
 
         Windeco = {
-          ButtonSize = "ButtonSmall";
-          DrawBackgroundGradient = "true";
+          ButtonSize = "ButtonMedium";
+          DrawBackgroundGradient = "false";
           TitleAlignment = "AlignLeft";
+        };
+      };
+      kwinrc = {
+        TouchEdges = {
+          Left = "ApplicationLauncher";
         };
       };
     };
