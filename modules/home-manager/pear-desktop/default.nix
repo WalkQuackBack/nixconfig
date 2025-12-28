@@ -59,6 +59,7 @@ in
         globalShortcuts = {};
       };
       discord = {
+        enabled = true;
         listenAlong = true;
       };
       ambient-mode = {
