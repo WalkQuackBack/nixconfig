@@ -18,7 +18,7 @@ in
             useQuickCss = true;
             disableMinSize = true;
             plugins = {
-                clearUrLs.enable = true;
+                ClearURLs.enable = true;
                 viewIcons.enable = true;
                 vencordToolbox.enable = true;
                 
