@@ -87,7 +87,7 @@ in
             name = "org.kde.plasma.kickoff";
             config = {
               compactMode = true;
-              icon = "nix-snowflake";
+              icon = "nix-snowflake-white";
               primaryActions = 3;
               showActionButtonCaptions = false;
               systemFavorites = "lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown";
