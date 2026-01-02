@@ -17,4 +17,9 @@
         dedicatedServer.openFirewall = true; # For Source Dedicated Server hosting
         # Other general flags if available can be set here.
     };
+    # Enable Waydroid
+    virtualisation.waydroid = {
+        enable = true;
+        package = pkgs.waydroid-nftables;
+    };
 }
