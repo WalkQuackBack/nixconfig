@@ -7,6 +7,8 @@
         microsoft-edge
         bitwarden-desktop
         vscode
+
+        deno
     ];
     fonts.packages = with pkgs; [
         noto-fonts
