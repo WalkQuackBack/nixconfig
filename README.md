@@ -4,7 +4,7 @@
 
 ## Hosts
 
-- 龙眼花: Dell XPS 13 9310
+- Ryuganhana: Dell XPS 13 9310
 
 ## LICENSE
 
