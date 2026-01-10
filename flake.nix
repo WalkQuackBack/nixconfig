@@ -19,9 +19,13 @@
     nixcord = {
       url = "github:kaylorben/nixcord";
     };
+
+    nix-flatpak = {
+      url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, nixcord, ... }:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, nixcord, nix-flatpak, ... }:
     let
       system = "x86_64-linux";
       stateVersion = "25.11";
@@ -49,6 +53,7 @@
               users.user = ./modules/home-manager/home.nix;
             };
           }
+          nix-flatpak.nixosModules.nix-flatpak
         ];
     };
   };

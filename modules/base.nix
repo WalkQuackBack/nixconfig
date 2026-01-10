@@ -2,6 +2,7 @@
     imports = [
         ./boot.nix
         ./packages.nix
+        ./flatpak.nix
     ];
 
     # Enable networking
