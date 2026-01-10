@@ -2,7 +2,7 @@
   services.flatpak = {
     enable = true;
     
-    uninstallUnmanaged = true;
+    uninstallUnmanaged = false;
 
     packages = [
       "org.vinegarhq.Sober"
