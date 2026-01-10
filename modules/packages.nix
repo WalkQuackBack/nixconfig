@@ -1,4 +1,7 @@
 { config, pkgs, ... }: {
+    imports = [
+        ./packages/waydroid.nix
+    ];
     environment.systemPackages = with pkgs; [
         google-chrome
         microsoft-edge
