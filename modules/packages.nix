@@ -5,6 +5,7 @@
     environment.systemPackages = with pkgs; [
         google-chrome
         microsoft-edge
+        mullvad-browser
         bitwarden-desktop
         vscode
     ];
