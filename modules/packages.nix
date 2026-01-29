@@ -12,6 +12,8 @@
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-color-emoji
+        maple-mono.variable
+        maple-mono.woff2
         inter
     ];
     programs.steam = {
