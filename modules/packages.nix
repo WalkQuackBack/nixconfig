@@ -7,6 +7,9 @@
         mullvad-browser
         bitwarden-desktop
         vscode
+
+        nodejs_24
+        pnpm
     ];
     fonts.packages = with pkgs; [
         noto-fonts
