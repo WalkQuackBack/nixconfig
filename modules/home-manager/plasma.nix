@@ -28,6 +28,7 @@ in
           noiseStrength = 8;
           strength = 10;
         };
+        windowOpenClose.animation = "off";
       };
       nightLight = {
         mode = "times";
@@ -149,6 +150,11 @@ in
       kwinrc = {
         TouchEdges = {
           Left = "ApplicationLauncher";
+        };
+      };
+      baloofilerc = {
+        "Basic Settings" = {
+          "Indexing-Enabled" = false;
         };
       };
     };
