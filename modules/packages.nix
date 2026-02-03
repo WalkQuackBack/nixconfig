@@ -25,4 +25,5 @@
         dedicatedServer.openFirewall = true; # For Source Dedicated Server hosting
         # Other general flags if available can be set here.
     };
+    services.flatpak.enable = true;
 }
