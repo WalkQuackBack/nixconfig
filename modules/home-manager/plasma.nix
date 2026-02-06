@@ -151,11 +151,17 @@ in
         TouchEdges = {
           Left = "ApplicationLauncher";
         };
+        TabBox = {
+          LayoutName = "compact";
+        };
       };
       baloofilerc = {
         "Basic Settings" = {
           "Indexing-Enabled" = false;
         };
+      };
+      kdeglobals.KDE = {
+        AnimationDurationFactor = 0;
       };
     };
 
