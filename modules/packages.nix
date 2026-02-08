@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
     imports = [
         ./packages/waydroid.nix
+        ./packages/lutris.nix
     ];
     environment.systemPackages = with pkgs; [
         google-chrome
