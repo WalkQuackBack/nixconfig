@@ -1,5 +1,12 @@
 { config, pkgs, ... }: {
     environment.systemPackages = with pkgs; [
-        lutris
+        (lutris.override {
+            extraPkgs = pkgs: [
+                wineWowPackages.waylandFull
+                winetricks
+                vulkan-tools
+                xterm
+            ];
+        })
     ];
 }
