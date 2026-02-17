@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
     imports = [
         ./packages/waydroid.nix
+        ./packages/msedge.nix
     ];
     environment.systemPackages = with pkgs; [
         google-chrome
