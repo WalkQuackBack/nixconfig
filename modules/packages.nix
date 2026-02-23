@@ -10,6 +10,8 @@
 
         nodejs_24
         pnpm
+
+        prismlauncher
     ];
     fonts.packages = with pkgs; [
         noto-fonts
