@@ -31,6 +31,7 @@ in
         windowOpenClose.animation = "off";
       };
       nightLight = {
+        enable = true;
         mode = "times";
         temperature = {
           day = 6500;
