@@ -6,7 +6,6 @@
         displayManager.sddm.wayland.enable = true;
     };
     environment.systemPackages = with pkgs; [
-        kdePackages.kate
         kdePackages.filelight
     ];
     environment.plasma6.excludePackages = with pkgs; [
@@ -19,6 +18,13 @@
         kdePackages.kpat
         kdePackages.ksudoku
         kdePackages.ktorrent
+        kdePackages.plasma-browser-integration
+        kdePackages.kate
+        kdePackages.khelpcenter
+        kdePackages.baloo-widgets
+        kdePackages.dolphin-plugins
+        kdePackages.ffmpegthumbs
+        kdePackages.krdp
         mpv
     ];
 }
