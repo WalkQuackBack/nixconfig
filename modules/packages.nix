@@ -1,7 +1,5 @@
 { config, pkgs, ... }: {
-    imports = [
-        ./packages/waydroid.nix
-    ];
+    imports = [];
     environment.systemPackages = with pkgs; [
         google-chrome
         mullvad-browser
