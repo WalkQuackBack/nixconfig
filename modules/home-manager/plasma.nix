@@ -135,6 +135,8 @@ in
       }
     ];
 
+    session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
+
     configFile = {
       breezerc = {
         Common = {
