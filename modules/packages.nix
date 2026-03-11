@@ -1,5 +1,7 @@
 { config, pkgs, ... }: {
-    imports = [];
+    imports = [
+        ./packages/obs-studio.nix
+    ];
     environment.systemPackages = with pkgs; [
         google-chrome
         mullvad-browser
