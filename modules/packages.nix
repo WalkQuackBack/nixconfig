@@ -2,6 +2,7 @@
     imports = [];
     environment.systemPackages = with pkgs; [
         google-chrome
+        ungoogled-chromium
         mullvad-browser
         bitwarden-desktop
         vscode
