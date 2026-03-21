@@ -11,7 +11,7 @@ in
         colorScheme = "Material You dark";
         cursor = {
           cursorFeedback = "None";
-          size = 16;
+          size = 24;
           theme = "breeze_cursors";
         };
 
