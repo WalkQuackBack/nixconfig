@@ -66,7 +66,7 @@ in
         };
         menu = {
             family = "Inter Variable";
-            pointSize = 14;
+            pointSize = 12;
             weight = 400;
         };
         windowTitle = {
