@@ -48,7 +48,7 @@ in
     fonts = {
         general = {
             family = "Inter Variable";
-            pointSize = 14;
+            pointSize = 12;
             weight = 400;
             letterSpacing = 100;
         };
@@ -66,7 +66,7 @@ in
         };
         menu = {
             family = "Inter Variable";
-            pointSize = 14;
+            pointSize = 12;
             weight = 400;
         };
         windowTitle = {
@@ -124,7 +124,7 @@ in
             config = {
               autoFontAndSize = false;
               fontFamily = "Inter Variable";
-              fontSize = 11;
+              fontSize = 10;
               fontStyleName = "Medium";
               fontWeight = 500;
               showSeconds = "Never";
