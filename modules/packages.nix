@@ -4,6 +4,7 @@
         google-chrome
         ungoogled-chromium
         mullvad-browser
+        mullvad-vpn
         bitwarden-desktop
         vscode
 
