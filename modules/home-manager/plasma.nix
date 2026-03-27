@@ -11,7 +11,7 @@ in
         colorScheme = "Material You dark";
         cursor = {
           cursorFeedback = "None";
-          size = 16;
+          size = 24;
           theme = "breeze_cursors";
         };
 
@@ -28,8 +28,10 @@ in
           noiseStrength = 8;
           strength = 10;
         };
+        windowOpenClose.animation = "off";
       };
       nightLight = {
+        enable = true;
         mode = "times";
         temperature = {
           day = 6500;
@@ -133,6 +135,8 @@ in
       }
     ];
 
+    session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
+
     configFile = {
       breezerc = {
         Common = {
@@ -150,6 +154,17 @@ in
         TouchEdges = {
           Left = "ApplicationLauncher";
         };
+        TabBox = {
+          LayoutName = "compact";
+        };
+      };
+      baloofilerc = {
+        "Basic Settings" = {
+          "Indexing-Enabled" = false;
+        };
+      };
+      kdeglobals.KDE = {
+        AnimationDurationFactor = 0;
       };
     };
 
