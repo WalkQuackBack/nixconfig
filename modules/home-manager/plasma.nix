@@ -141,7 +141,7 @@ in
       breezerc = {
         Common = {
           OutlineIntensity = "OutlineLow";
-          ShadowSize = "ShadowMedium";
+          ShadowSize = "ShadowNone";
         };
 
         Windeco = {
