@@ -19,9 +19,13 @@
     nixcord = {
       url = "github:kaylorben/nixcord";
     };
+
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware/master";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, nixcord, ... }:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, nixcord, nixos-hardware, ... }:
     let
       system = "x86_64-linux";
       stateVersion = "25.11";
@@ -33,6 +37,7 @@
         };
         modules = [
           ./consumers/ryuganhana/configuration.nix
+          nixos-hardware.nixosModules.dell-xps-13-9310
           home-manager.nixosModules.default
           {
             home-manager = {
