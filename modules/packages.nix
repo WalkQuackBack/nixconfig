@@ -4,7 +4,6 @@
         google-chrome
         ungoogled-chromium
         mullvad-browser
-        mullvad-vpn
         bitwarden-desktop
         vscode
 
@@ -28,4 +27,8 @@
         # Other general flags if available can be set here.
     };
     services.flatpak.enable = true;
+    services.mullvad-vpn = {
+        enable = true;
+        package = pkgs.mullvad-vpn;
+    };
 }
