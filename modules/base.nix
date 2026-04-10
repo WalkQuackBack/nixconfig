@@ -62,6 +62,13 @@
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
+    # Clean up old things
+    nix.gc = {
+        automatic = true;
+        options = "--delete-older-than 7d";
+        dates = "weekly";
+    };
+
     # Enable flakes and nix command
     nix.settings.experimental-features = [
         "nix-command"
