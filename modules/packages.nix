@@ -1,5 +1,7 @@
 { config, pkgs, ... }: {
-    imports = [];
+    imports = [
+        ./packages/lutris.nix
+    ];
     environment.systemPackages = with pkgs; [
         google-chrome
         ungoogled-chromium
