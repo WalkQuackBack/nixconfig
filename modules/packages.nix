@@ -1,16 +1,18 @@
 { config, pkgs, ... }: {
     imports = [
-        ./packages/waydroid.nix
         ./packages/lutris.nix
     ];
     environment.systemPackages = with pkgs; [
         google-chrome
+        ungoogled-chromium
         mullvad-browser
         bitwarden-desktop
         vscode
 
         nodejs_24
         pnpm
+
+        prismlauncher
     ];
     fonts.packages = with pkgs; [
         noto-fonts
@@ -27,4 +29,8 @@
         # Other general flags if available can be set here.
     };
     services.flatpak.enable = true;
+    services.mullvad-vpn = {
+        enable = true;
+        package = pkgs.mullvad-vpn;
+    };
 }

@@ -11,7 +11,7 @@ in
         colorScheme = "Material You dark";
         cursor = {
           cursorFeedback = "None";
-          size = 16;
+          size = 24;
           theme = "breeze_cursors";
         };
 
@@ -31,6 +31,7 @@ in
         windowOpenClose.animation = "off";
       };
       nightLight = {
+        enable = true;
         mode = "times";
         temperature = {
           day = 6500;
@@ -47,7 +48,7 @@ in
     fonts = {
         general = {
             family = "Inter Variable";
-            pointSize = 14;
+            pointSize = 12;
             weight = 400;
             letterSpacing = 100;
         };
@@ -65,7 +66,7 @@ in
         };
         menu = {
             family = "Inter Variable";
-            pointSize = 14;
+            pointSize = 12;
             weight = 400;
         };
         windowTitle = {
@@ -123,7 +124,7 @@ in
             config = {
               autoFontAndSize = false;
               fontFamily = "Inter Variable";
-              fontSize = 11;
+              fontSize = 10;
               fontStyleName = "Medium";
               fontWeight = 500;
               showSeconds = "Never";
@@ -134,11 +135,13 @@ in
       }
     ];
 
+    session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
+
     configFile = {
       breezerc = {
         Common = {
           OutlineIntensity = "OutlineLow";
-          ShadowSize = "ShadowMedium";
+          ShadowSize = "ShadowNone";
         };
 
         Windeco = {

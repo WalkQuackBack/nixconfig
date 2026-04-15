@@ -21,12 +21,4 @@
     description = "";
     extraGroups = [ "networkmanager" "wheel" ];
   };
-
-  # Enable the fingerprint reader
-  # https://wiki.nixos.org/wiki/Fingerprint_scanner
-  services.fprintd = {
-      enable = true;
-      tod.enable = true;
-      tod.driver = pkgs.libfprint-2-tod1-goodix;
-  };
 }

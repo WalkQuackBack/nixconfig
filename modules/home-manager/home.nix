@@ -4,7 +4,7 @@
   imports = [
     ./plasma.nix
     ./nixcord/default.nix
-    ./kde-material-you-colors.nix
+    ./kde-material-you-colors/default.nix
     ./pear-desktop/default.nix
   ];
 
