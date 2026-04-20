@@ -10,6 +10,7 @@
         vscode
 
         nodejs_24
+        deno
         pnpm
 
         prismlauncher
