@@ -25,54 +25,54 @@
 
 /* Increase touch targets */
 :root {
-    .aa8da23faa27393c-side .aa8da23faa27393c-item {
+    .side_aa8da2 .item_aa8da2 {
         line-height: 30px;
         margin-block: 0;
         border-radius: 8px;
     }
 
     /* Remove gaps between DM list items */
-    .a244c3c87d2b1e13-container {
+    .container_a244c3 {
         padding: 0;
     }
     /* Remove gaps between server list items */
-    ._2ea32c412048f708-wrapper {
+    .wrapper__2ea32 {
         padding: 0;
     }
 
     /* Increase touch target for DM list items */
-    ._20a53846fe2e8513-layout {
+    .layout__20a53 {
         height: 52px;
     }
     /* Increase touch target for server list items */
-    ._2ea32c412048f708-link {
+    .link__2ea32 {
         padding: 5px 10px;
     }
 
     /* Increase touch target for toolbar actions */
-    ._9293f6b2fc12398a-iconWrapper,
+    .iconWrapper__9293f,
     /* Increase touch target for activities button */
-    .e6e74fd4d1221f53-button,
+    .button_e6e74f,
     /* Increase touch target for chatbox toolbar actions */
-    ._740174f3d6a2c8fe-button {
+    .button__74017 {
         width: var(--min-target-size);
         height: var(--min-target-size);
     }
     /* Increase icon size for chatbox toolbar actions */
-    ._740174f3d6a2c8fe-button [class^='buttonWrapper'],
+    .button__74017 [class^='buttonWrapper'],
     [class^='emojiButton'] > div {
         /* 22px icons */
         scale: 1.1;
     }
     /* Increase touch target for attach button */
-    ._740174f3d6a2c8fe-attachButton {
+    .attachButton__74017 {
         margin-right: var(--space-4);
     }
-    ._0923f156a0410684-attachWrapper {
+    .attachWrapper__0923f {
         padding-inline: var(--space-4) var(--space-6);
         padding-block: 2px;
     }
-    ._0923f156a0410684-attachButtonInner {
+    .attachButtonInner__0923f {
         box-sizing: border-box;
         height: var(--min-target-size);
         padding: 12px;
@@ -80,7 +80,7 @@
     }
     /* Increase touch target for send button */
     /* Make send button primary whe activatable */
-    .aa63abf63dbd9cce-button {
+    .button_aa63ab {
         min-height: var(--min-target-size);
         min-width: var(--min-target-size);
         padding: 4px;
@@ -94,36 +94,36 @@
             }
         }
 
-        &:not(._24af7f4d0326ba4f-noHover):hover {
+        &:not(.noHover__24af7):hover {
             background-color: var(--control-background-primary-hover);
             border-color: var(--control-border-primary-hover);
-            .aa63abf63dbd9cce-activeButtonChild {
+            .activeButtonChild_aa63ab {
                 color: var(--control-text-primary-hover);
             }
         }
 
-        .aa63abf63dbd9cce-activeButtonChild {
+        .activeButtonChild_aa63ab {
             color: var(--control-text-primary-default);
         }
     }
 
     /* Context Menu reduce padding */
-    .c1e9c47c23f12ca3-scroller {
+    .scroller_c1e9c4 {
         padding: 4px;
         padding-right: 4px !important;
         overflow-y: auto !important;
         border-radius: 0;
     }
     /* Context menu touch target */
-    .c1e9c47c23f12ca3-labelContainer {
+    .labelContainer_c1e9c4 {
         padding: 7px 8px;
     }
     /* Context menu item */
-    .c1e9c47c23f12ca3-item {
+    .item_c1e9c4 {
         font-weight: 400;
     }
     /* Context menu divider decrease margin */
-    .c1e9c47c23f12ca3-separator {
+    .separator_c1e9c4 {
         margin: 4px 6px;
     }
 }
@@ -133,13 +133,13 @@ button,
 [class^='button'],
 [class^='buttonChild'],
 [class^='emojiButton'],
-.aa63abf63dbd9cce-buttonChild,
-._24af7f4d0326ba4f-button:not(._24af7f4d0326ba4f-noHover) {
+.buttonChild_aa63ab,
+.button__24af7:not(.noHover__24af7) {
     transition: opacity 50ms ease-in !important;
 }
 
 /* Expand search bar on hover */
-.c322aadb96ff59c9-searchBar {
+.searchBar_c322aa {
     background: var(--background-gradient-lowest, var(--background-base-lowest));
     border-color: var(--border-normal);
     transition: width var(--spatial-expressive-default-duration) var(--spatial-expressive-default-timing);
@@ -168,7 +168,7 @@ button,
 }
 
 /* Sidebar view */
-.aa8da23faa27393c-side .aa8da23faa27393c-item {
+.side_aa8da2 .item_aa8da2 {
     border-radius: 18px;
     margin-bottom: 2px;
     padding-bottom: 6px;
@@ -178,7 +178,7 @@ button,
 /* Gaps */
 
 /* Main sidebar */
-._5e434347c823b592-sidebarListRounded {
+.sidebarListRounded__5e434 {
     border-top-left-radius: var(--radius-lg);
     border-top-right-radius: var(--radius-md);
     margin-inline-end: var(--panel-gap);
@@ -186,27 +186,27 @@ button,
     & > nav,
     & > nav > div:first-child,
     /* Private channels scroller */
-    ._99e7cad8d4c55236-scroller {
+    .scroller__99e7c {
         background: var(--background-gradient-high,var(--background-base-lower));
     }
 }
 
 /* Centre panel */
 /* DM/Server chaT */
-.f75fb00fb7356cbe-chat,
+.chat_f75fb0,
 /* Friends outer container */
-._133bf5eea8e33a34-container,
+.container__133bf,
 /* Friends inner container */
-._9293f6b2fc12398a-container,
+.container__9293f,
 /* Nitro page */
-._0920e02cc8fc7b7b-homeWrapper,
+.homeWrapper__0920e,
 /* Nitro page outer wrapper */
-.f07d62e29a48ceee-applicationStore {
+.applicationStore_f07d62 {
     border-top-left-radius: var(--radius-md);
 }
 
 /* Mobile style self panel */
-._5e434347c823b592-panels {
+.panels__5e434 {
     background: var(--background-gradient-low,var(--background-base-low));
     border-top: 1px solid var(--border-faint);
     border-radius: 0;
@@ -214,45 +214,45 @@ button,
     left: 0;
     width: calc(100% - var(--panel-gap));
 }
-._37e49614b9f110a9-container {
+.container__37e49 {
     padding: var(--space-6);
 }
 
 /* Top toolbar */
-._9293f6b2fc12398a-toolbar,
+.toolbar__9293f,
 /* Message bar toolbar */
-._740174f3d6a2c8fe-buttons {
+.buttons__74017 {
     gap: 0;
 }
 
-._5e434347c823b592-sidebarResizeHandle {
+.sidebarResizeHandle__5e434 {
     --custom-overdrag: 2;
 }
 
-.b8880176888cc928-inTextChannel .b8880176888cc928-text {
+.inTextChannel_b88801 .text_b88801 {
     margin-left: var(--space-8);
 }
 
 /* Message hover effect */
-._5126c0cd07f243a0-message._5126c0cd07f243a0-selected,
-._5126c0cd07f243a0-message:hover {
+.message__5126c.selected__5126c,
+.message__5126c:hover {
     background: var(--background-message-hover);
 }
 
 /* Round chat box more */
-._740174f3d6a2c8fe-channelTextArea,
-._740174f3d6a2c8fe-scrollableContainer {
+.channelTextArea__74017,
+.scrollableContainer__74017 {
     border-radius: calc(var(--custom-channel-textarea-text-area-height)/2);
 }
 /* Chatbox shadow */
-._740174f3d6a2c8fe-channelTextArea {
+.channelTextArea__74017 {
     box-shadow: var(--shadow-low);
     &:hover {
         box-shadow: var(--shadow-low-hover);
     }
 }
 /* Symetrical scroll area chatbox */
-._740174f3d6a2c8fe-scrollableContainer {
+.scrollableContainer__74017 {
     scrollbar-gutter: stable both-edges;
     /* Make chatbox buttons rounded */
     [class^='button'],
@@ -260,27 +260,27 @@ button,
         border-radius: 22px;
     }
     /* Fix double state layer */
-    ._0923f156a0410684-attachButton:hover {
+    .attachButton__0923f:hover {
         background-color: transparent;
     }
 }
-._740174f3d6a2c8fe-sansAttachButton {
+.sansAttachButton__74017 {
     padding-left: 3px;
 }
 
 /* Top bar compression (see also --custom-app-top-bar-height) */
-.c38106a3f0c3ca76-bar {
+.bar_c38106 {
     padding: 0 var(--space-4);
 }
-.c38106a3f0c3ca76-title {
+.title_c38106 {
     visibility: hidden;
 }
-.c38106a3f0c3ca76-leading,
-.c38106a3f0c3ca76-trailing {
+.leading_c38106,
+.trailing_c38106 {
     gap: 0;
     transform-origin: right;
     [class^='clickable_'],
-    ._9293f6b2fc12398a-iconWrapper {
+    .iconWrapper__9293f {
         --custom-horizontal-padding: 0;
         width: var(--custom-app-top-bar-height);
         height: var(--custom-app-top-bar-height);
