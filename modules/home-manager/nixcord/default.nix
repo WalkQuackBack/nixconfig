@@ -29,7 +29,7 @@ in
                 touchy = "${theme-touchy}";
             };
             enabledThemes = [
-                "${theme-touchy}"
+                "touchy.css"
             ];
         };
     };
