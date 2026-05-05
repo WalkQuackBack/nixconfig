@@ -4,6 +4,7 @@
   # https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-flake.html#flake-inputs
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
 
     home-manager = {
       url = "github:nix-community/home-manager/master";
@@ -25,15 +26,19 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, nixcord, nixos-hardware, ... }:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, plasma-manager, nixcord, nixos-hardware, ... }:
     let
       system = "x86_64-linux";
       stateVersion = "25.11";
+      pkgs-stable = import nixpkgs-stable {
+        inherit system;
+        config.allowUnfree = true;
+      };
     in {
       nixosConfigurations.ryuganhana = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {
-          inherit stateVersion;
+          inherit stateVersion pkgs-stable;
         };
         modules = [
           ./consumers/ryuganhana/configuration.nix
