@@ -1,7 +1,7 @@
-{ config, pkgs, ... }: {
-    environment.systemPackages = with pkgs; [
+{ config, pkgs-stable, ... }: {
+    environment.systemPackages = with pkgs-stable; [
         (lutris.override {
-            extraPkgs = pkgs: [
+            extraPkgs = pkgs-stable: [
                 wineWow64Packages.waylandFull
                 winetricks
                 vulkan-tools
