@@ -5,8 +5,7 @@ let
 in
 {
   home.packages = with pkgs; [
-    # Renamed to pear-desktop in https://github.com/NixOS/nixpkgs/pull/473695
-    youtube-music
+    pear-desktop
   ];
   home.file."${config.xdg.configHome}/YouTube Music/Preferences" = {
     force = true;
