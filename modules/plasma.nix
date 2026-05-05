@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }: {
+{ plasma-manager, pkgs, ... }: {
     services = {
         desktopManager.plasma6.enable = true;
 
@@ -27,4 +27,11 @@
         kdePackages.krdp
         mpv
     ];
+    home-manager = {
+        sharedModules = [
+            plasma-manager.homeModules.plasma-manager
+            ./home-manager/plasma.nix
+            ./home-manager/kde-material-you-colors/default.nix
+        ];
+    };
 }

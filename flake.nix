@@ -38,7 +38,7 @@
       nixosConfigurations.ryuganhana = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {
-          inherit stateVersion pkgs-stable;
+          inherit stateVersion pkgs-stable plasma-manager;
         };
         modules = [
           ./consumers/ryuganhana/configuration.nix
@@ -51,7 +51,6 @@
               };
               backupFileExtension = "old";
               sharedModules = [
-                plasma-manager.homeModules.plasma-manager
                 nixcord.homeModules.nixcord
               ];
               useGlobalPkgs = true;
