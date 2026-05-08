@@ -337,6 +337,7 @@ window-rule {
 }
 
 blur {
+    off
     passes 1
     offset 8
     noise 0.04
