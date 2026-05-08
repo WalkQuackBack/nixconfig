@@ -95,8 +95,8 @@
         lockScreenTint = 0;
       };
       ui = {
-        # fontDefault = "Inter Variable";
-        # fontFixed = "Maple Mono";
+        fontDefault = "Inter Variable";
+        fontFixed = "Maple Mono";
         fontDefaultScale = 1;
         fontFixedScale = 1;
         panelsAttachedToBar = true;
