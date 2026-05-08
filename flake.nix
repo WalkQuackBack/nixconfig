@@ -27,6 +27,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixcord = {
       url = "github:kaylorben/nixcord";
     };
@@ -49,6 +54,7 @@
     plasma-manager,
     niri-flake,
     noctalia,
+    stylix,
     nixcord,
     nixos-hardware,
     ...
@@ -70,6 +76,7 @@
           ./consumers/ryuganhana/configuration.nix
           nixos-hardware.nixosModules.dell-xps-13-9310
           home-manager.nixosModules.default
+          stylix.nixosModules.stylix
           {
             home-manager = {
               extraSpecialArgs = {
