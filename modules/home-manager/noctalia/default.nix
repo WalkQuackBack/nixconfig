@@ -76,7 +76,7 @@
         dimmerOpacity = 0;
         lockOnSuspend = true;
         enableShadows = false;
-        enableBlurBehind = true;
+        enableBlurBehind = false;
         telemetryEnabled = true;
         passwordChars = false;
         autoStartAuth = true;
