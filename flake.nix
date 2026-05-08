@@ -17,6 +17,11 @@
       inputs.home-manager.follows = "home-manager";
     };
 
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixcord = {
       url = "github:kaylorben/nixcord";
     };
@@ -26,7 +31,17 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, plasma-manager, nixcord, nixos-hardware, ... }:
+  outputs = {
+    self,
+    nixpkgs,
+    nixpkgs-stable,
+    home-manager,
+    plasma-manager,
+    stylix,
+    nixcord,
+    nixos-hardware,
+    ...
+  }:
     let
       system = "x86_64-linux";
       stateVersion = "25.11";
@@ -44,6 +59,7 @@
           ./consumers/ryuganhana/configuration.nix
           nixos-hardware.nixosModules.dell-xps-13-9310
           home-manager.nixosModules.default
+          stylix.nixosModules.stylix
           {
             home-manager = {
               extraSpecialArgs = {
