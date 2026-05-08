@@ -70,7 +70,7 @@
       nixosConfigurations.ryuganhana = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {
-          inherit stateVersion pkgs-stable;
+          inherit stateVersion pkgs-stable inputs;
         };
         modules = [
           ./consumers/ryuganhana/configuration.nix
