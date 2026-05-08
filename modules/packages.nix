@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
     imports = [
         ./packages/lutris.nix
+        ./packages/stylix.nix
     ];
     environment.systemPackages = with pkgs; [
         google-chrome
