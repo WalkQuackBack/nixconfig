@@ -22,6 +22,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    niri-flake = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixcord = {
       url = "github:kaylorben/nixcord";
     };
@@ -29,15 +39,22 @@
     nixos-hardware = {
       url = "github:NixOS/nixos-hardware/master";
     };
+    };
+
+  nixConfig = {
+    extra-substituters = [ "https://noctalia.cachix.org" ];
+    extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
   };
 
-  outputs = {
+  outputs = inputs@{
     self,
     nixpkgs,
     nixpkgs-stable,
     home-manager,
     plasma-manager,
     stylix,
+    niri-flake,
+    noctalia,
     nixcord,
     nixos-hardware,
     ...
