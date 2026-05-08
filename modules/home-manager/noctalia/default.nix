@@ -84,6 +84,9 @@
         reverseScroll = false;
         smoothScrollEnabled = true;
 
+        animationSpeed = 2;
+        animationDisabled = false;
+
         compactLockScreen = false;
         lockScreenAnimations = true;
         showSessionButtonsOnLockScreen = true;
