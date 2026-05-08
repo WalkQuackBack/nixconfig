@@ -102,8 +102,8 @@
         panelsAttachedToBar = true;
         settingsPanelMode = "attached";
         settingsPanelSideBarCardStyle = true;
-        panelBackgroundOpacity = 0.75;
-        translucentWidgets = true;
+        panelBackgroundOpacity = 1;
+        translucentWidgets = false;
       };
       location = {
         name = "Edmonton";
