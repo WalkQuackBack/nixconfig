@@ -17,11 +17,6 @@
       inputs.home-manager.follows = "home-manager";
     };
 
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     niri-flake = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -52,7 +47,6 @@
     nixpkgs-stable,
     home-manager,
     plasma-manager,
-    stylix,
     niri-flake,
     noctalia,
     nixcord,
@@ -76,7 +70,6 @@
           ./consumers/ryuganhana/configuration.nix
           nixos-hardware.nixosModules.dell-xps-13-9310
           home-manager.nixosModules.default
-          stylix.nixosModules.stylix
           {
             home-manager = {
               extraSpecialArgs = {
