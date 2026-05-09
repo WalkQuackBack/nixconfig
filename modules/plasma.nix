@@ -27,3 +27,4 @@
         kdePackages.krdp
         mpv
     ];
+}
