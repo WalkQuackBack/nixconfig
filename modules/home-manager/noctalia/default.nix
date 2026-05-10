@@ -276,6 +276,20 @@
         manualSunrise = "06:30";
         manualSunset = "18:30";
       };
+      idle = {
+        enable = true;
+        screenOffTimeout = 60;
+        lockTimeout = 60;
+        suspendTimeout = 240;
+        fadeDuration = 5;
+        screenOffCommand = "";
+        lockCommand = "";
+        suspendCommand = "";
+        resumeScreenOffCommand = "";
+        resumeLockCommand = "";
+        resumeSuspendCommand = "";
+        customCommands = [];
+      };
     };
     /*
     colors = {
