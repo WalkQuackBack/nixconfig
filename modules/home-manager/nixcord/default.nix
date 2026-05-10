@@ -11,12 +11,12 @@ in
             settings = {
                 discordBranch = "stable";
                 minimizeToTray = true;
+                disableMinSize = true;
                 arRPC = true;
             };
         };
         config = {
             useQuickCss = true;
-            disableMinSize = true;
             plugins = {
                 ClearURLs.enable = true;
                 viewIcons.enable = true;
